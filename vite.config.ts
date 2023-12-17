@@ -51,7 +51,7 @@ export default defineConfig(({ mode }) => {
       port: 9527,
       proxy: {
         "/api": {
-          target: "https://lyb.cbb.plus/wzry",
+          target: "https://192.168.2.6:5500",
           changeOrigin: true,
           rewrite: (path) => path.replace(/^\/api/, ""),
         },
